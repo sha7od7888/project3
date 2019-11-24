@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>entertainment places</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css_files/style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <meta http-equiv="refresh" content="">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body id="mbody">
+
+<div class="content">
+ <nav class="navbar navbar-inverse">
+      <div class="container-fluid bg">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">England</a>
+        </div>
+     <ul class="nav navbar-nav">
+         <li><a href="index.html"> Home</a></li>
+        <li><a href="restaurant.html"> Restaurants</a></li>
+        <li><a href="entertainment.html"> Entertainment</a></li>
+        <li><a href="historical.html"> Historical places</a></li>
+        <li><a href="cafes.html"> Cafes</a></li>
+        <li><a href="https://weather.com/weather/tenday/l/UKXX0085:1:UK"> weather</a></li>
+        <li><a href="https://www.trip.com/" target="_blank"> Book your trip</a></li>
+         <li class="active"><a href="rating.html" >Rate us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    
+    
+
+
+<div class="">
+   <div class="col-3 menu"><br><br>
+    <ul>
+    <ul>
+      
+        <li><a href="restaurant.html"> Restaurants</a></li>
+        <li><a href="entertainment.html"> Entertainment</a></li>
+        <li><a href="historical.html"> Historical places</a></li>
+        <li><a href="cafes.html"> Cafes</a></li>
+        <li><a href="https://weather.com/weather/tenday/l/UKXX0085:1:UK"> weather</a></li>
+        <li><a href="https://www.trip.com/" target="_blank">Book your trip</a></li>
+        <li><img width="100%" src="images/liv.jpg" alt="liver"></li>
+    </ul>
+    </ul>
+  </div>
+    
+
+
+ <div class="col-8">
+     
+       
+    <fieldset Style="margin-left:5%;margin-right:5%;padding:15px;background-color: #F0F0F0">
+   
+    <legend><h2 style="color: brown">Rate our website:</h2></legend>
+<form action="">
+  <label>First Name</label>
+  <input class="w3-input w3-border" type="text" name="firstname" id="fname" value="" required>
+  <br>
+  <label>Last Name</label>
+  <input class="w3-input w3-border" type="text" id="lname" name="lastname" value="" required>
+  <br>
+
+    
+<h3>Rating:</h3>
+   
+    <input type="radio" name="state" value="Excellent" checked> Excellent<br><br>
+    <input type="radio" name="state" value="very good"> very good<br><br>
+    <input type="radio" name="state" value="Good"> Good<br><br>
+    <input type="radio" name="state" value="Acceptable"> Acceptable<br><br>
+     <input type="radio" name="state" value="Bad"> Bad<br><br> 
+    
+    <h3>Your Commants:</h3>
+        <textarea id="msg" name="subject" placeholder="Write something.." style="height:170px;width: 100%;"></textarea><br><br>
+    
+   <input type="submit" onClick="check1()"  class="w3-button w3-block w3-padding-large w3-green w3-margin-bottom" >
+    </form>
+</fieldset>
+<br>
+       
+            </div>
+  
+    <div class="col-12 footer" > 
+    copyright protected
+    </div>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+function check1(){
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+      if (fname == "" || lname == "" ) {
+    alert("First name and last name must be filled out");
+    return false;
+  }else{
+    alert("Thanks:\n "+ fname +" "+lname + "\nfor your rating");  
+  }
+  }
+</script>
